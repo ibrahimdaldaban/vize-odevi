@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İbo - Dijital Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="baslik-alani">
+            <h1>ibrahim</h1>
+            <p id="daktilo-metni"></p>
+        </div>
+        <button id="tema-butonu">Karanlık Mod</button>
+    </header>
+
+    <main>
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <img src="profil.jpg.jpeg" alt="Profil Fotoğrafım" class="profil-resmi">
+            <p>Merhaba, ben İbo. Gümüşhane Üniversitesi'nde öğrenim görüyorum. Web geliştirme dünyasına ilgi duyuyor ve modern, kullanıcı dostu projeler üretmek için çalışıyorum.</p>
+        </section>
+
+        <section id="yetenekler">
+            <h2>Yetenekler ve Eğitim</h2>
+            <p><strong>Eğitim:</strong> Gümüşhane Üniversitesi</p>
+            
+            <div class="yetenek-alani">
+                <div class="yetenek">
+                    <span>HTML</span>
+                    <div class="bar-arkaplan"><div class="bar-dolgu" style="width: 90%;"></div></div>
+                </div>
+                <div class="yetenek">
+                    <span>CSS / Bootstrap</span>
+                    <div class="bar-arkaplan"><div class="bar-dolgu" style="width: 80%;"></div></div>
+                </div>
+                <div class="yetenek">
+                    <span>JavaScript</span>
+                    <div class="bar-arkaplan"><div class="bar-dolgu" style="width: 60%;"></div></div>
+                </div>
+                <div class="yetenek">
+                    <span>Django</span>
+                    <div class="bar-arkaplan"><div class="bar-dolgu" style="width: 50%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeler">
+            <h2>Proje Galerisi</h2>
+            <div class="filtre-alani">
+                <button class="filtre-butonu" data-kategori="hepsi">Tümü</button>
+                <button class="filtre-butonu" data-kategori="web">Web Projeleri</button>
+                <button class="filtre-butonu" data-kategori="mobil">Mobil Projeler</button>
+            </div>
+            <div id="proje-kapsayici">
+                </div>
+        </section>
+
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <p>Benimle aşağıdaki bağlantılardan iletişime geçebilirsiniz:</p>
+            <ul>
+                <li><a href="mailto:ornek@email.com">Email Gönder</a></li>
+                <li><a href="https://github.com/kullaniciadiniz" target="_blank">GitHub Profilim</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
