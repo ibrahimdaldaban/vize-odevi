@@ -1,0 +1,117 @@
+:root {
+    --arkaplan: #ffffff;
+    --metin: #333333;
+    --kart-arkaplan: #f8f9fa;
+    --vurgu-rengi: #007bff;
+    --border-rengi: #dddddd;
+}
+body.karanlik-mod {
+    --arkaplan: #121212;
+    --metin: #e0e0e0;
+    --kart-arkaplan: #1e1e1e;
+    --vurgu-rengi: #bb86fc;
+    --border-rengi: #333333;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--arkaplan);
+    color: var(--metin);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--kart-arkaplan);
+    border-bottom: 1px solid var(--border-rengi);
+}
+
+section {
+    padding: 40px 5%;
+    border-bottom: 1px solid var(--border-rengi);
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--vurgu-rengi);
+    color: #fff;
+    font-weight: bold;
+}
+
+.filtre-alani {
+    margin-bottom: 20px;
+}
+
+.filtre-butonu {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: var(--kart-arkaplan);
+    color: var(--metin);
+    border: 1px solid var(--border-rengi);
+}
+
+.filtre-butonu:hover {
+    background-color: var(--vurgu-rengi);
+    color: #fff;
+}
+
+#proje-kapsayici {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proje-karti {
+    background-color: var(--kart-arkaplan);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-rengi);
+    transition: transform 0.2s;
+}
+
+.proje-karti:hover {
+    transform: translateY(-5px);
+}
+
+.proje-etiketi {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--vurgu-rengi);
+    color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.yetenek {
+    margin-bottom: 15px;
+}
+
+.bar-arkaplan {
+    width: 100%;
+    background-color: var(--border-rengi);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-dolgu {
+    height: 15px;
+    background-color: var(--vurgu-rengi);
+    width: 0; /* JS veya animasyon ile doldurulabilir, şimdilik inline style ile HTML'de verildi */
+    transition: width 1s ease-in-out;
+}
+.profil-resmi {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
